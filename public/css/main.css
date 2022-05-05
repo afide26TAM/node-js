@@ -51,7 +51,7 @@ main {
   color: #ffeb3b;
 }
 
- main {
+.grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
