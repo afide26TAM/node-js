@@ -8,7 +8,7 @@
 
     <main>
         <% if (products.length > 0) { %>
-            <h1>There are <%= products.length %> in our shop!</h1>
+            <h1>There <%= products.length===1 ? "is":"are"%> <%=products.length%> <%= products.length===1 ? "book":"books"%> in our catalogue</h1>
             <div class="grid">
                 <% for (let product of products) { %>
                     <article class="card product-item">
