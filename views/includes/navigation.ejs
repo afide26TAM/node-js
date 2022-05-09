@@ -3,9 +3,15 @@
         <ul class="main-header__item-list">
             <li class="main-header__item">
                 <a href="/" class="<%= path==='/' ? 'active' : ''%>">Shop</a></li>
-            <li class="main-header__item">
-                <a href="/admin/add-product" class="<%= path==='/admin/add-product' ? 'active' : ''%>">Add Product</a>
-            </li>
-        </ul>
+                <li class="main-header__item"><a class="<%= path==='/products-list' ? 'active' : ''%>" href="/products-list">Products</a></li>
+                <li class="main-header__item"><a class="<%= path==='/cart' ? 'active' : ''%>" href="/cart">Cart</a></li>
+                <li class="main-header__item"><a class="<%= path==='/checkout' ? 'active' : ''%>" href="/checkout">Checkout</a></li>
+                <li class="main-header__item">
+                    <a href="/admin/add-product" class="<%= path==='/admin/add-product' ? 'active' : ''%>">Add Product</a>
+                </li>
+                <li class="main-header__item">
+                    <a href="/admin/products" class="<%= path==='/products' ? 'active' : ''%>">Admin Product</a>
+                </li>
+            </ul>
     </nav>
 </header>
